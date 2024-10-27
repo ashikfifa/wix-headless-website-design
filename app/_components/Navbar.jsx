@@ -30,7 +30,7 @@ const Navbar = () => {
           >
             <button className="text-black">About</button>
             {showMegaMenu && (
-              <div className="absolute w-[600px] bg-white shadow-lg border border-gray-200 p-6 grid grid-cols-3 gap-4">
+              <div className=" absolute w-[600px] bg-white shadow-lg border border-gray-200 p-6 grid grid-cols-3 gap-4">
                 {/* Column 1 */}
                 <div>
                   <h3 className="font-bold text-black">Company</h3>
