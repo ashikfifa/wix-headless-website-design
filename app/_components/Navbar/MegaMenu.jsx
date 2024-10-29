@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function MegaMenu() {
   return (
-    <div className=" absolute w-full mt-11 bg-aliceblue shadow-lg border border-gray-200 p-6 grid grid-cols-3 gap-4">
+    <div className=" absolute w-full mt-11 bg-white shadow-lg border border-gray-200 p-6 grid grid-cols-3 gap-4">
       {/* Column 1 */}
       <div>
         <h3 className="font-bold text-black">Company</h3>
