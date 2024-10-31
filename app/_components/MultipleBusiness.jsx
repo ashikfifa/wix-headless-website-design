@@ -5,8 +5,8 @@ import Image from "next/image";
 const MultipleBusiness = () => {
   return (
     <div className=" bg-[rgb(101,68,249)] text-white">
-      <div className=" py-28 px-20">
-        <div className="flex flex-wrap items-center gap-10 ">
+      <div className="py-16 px-10 lg:py-28 lg:px-20">
+        <div className="flex items-center gap-10 flex-wrap sm:flex-wrap-reverse md:flex-wrap-reverse lg:flex-nowrap">
           <div className=" w-full lg:w-[50%] md:w-full ">
             <Image
               className=" rounded-3xl"

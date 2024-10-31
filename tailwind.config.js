@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        pasteColor: 'rgb(166, 235, 210)',
+        ashCOlor:'rgb(235, 235, 235)'
       },
     },
   },
