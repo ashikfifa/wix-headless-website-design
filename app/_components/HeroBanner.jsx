@@ -1,7 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import heroBannerImage from "../assets/images/hero.webp";
-import heroBannerImageMobile from "../assets/images/hero-img1.webp";
+import heroBannerImage from "@/app/assets/images/hero.webp";
+import heroBannerImageMobile from "@/app/assets/images/hero-img1.webp";
 import Image from "next/image";
 
 const HeroBanner = () => {
@@ -29,8 +29,18 @@ const HeroBanner = () => {
         </div>
       </div>
       <div className=" w-full lg:w-[50%]  ">
-        <Image  className="hidden lg:block" src={heroBannerImage} width={"100%"} alt="wix hero banner" />
-        <Image className=" block mt-10 mb-5 lg:hidden" src={heroBannerImageMobile} width={"100%"} alt="wix hero banner for mobile"/>
+        <Image
+          className="hidden lg:block"
+          src={heroBannerImage}
+          width={"100%"}
+          alt="wix hero banner"
+        />
+        <Image
+          className=" block mt-10 mb-5 lg:hidden"
+          src={heroBannerImageMobile}
+          width={"100%"}
+          alt="wix hero banner for mobile"
+        />
       </div>
     </div>
   );
