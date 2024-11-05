@@ -11,7 +11,8 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         pasteColor: 'rgb(166, 235, 210)',
-        ashCOlor:'rgb(235, 235, 235)'
+        ashCOlor:'rgb(235, 235, 235)',
+        customPurple: 'rgba(200, 169, 251, 1)',
       },
     },
   },
