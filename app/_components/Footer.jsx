@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div className=" bg-black py-10 px-20 text-white">
-      <div className=" flex gap-10">
-        <div>
+      <div className=" flex w-full gap-10">
+        <div className=" w-[32%]">
           <h3>Logo</h3>
 
           <p className=" mt-5">
@@ -14,20 +14,26 @@ const Footer = () => {
           </p>
         </div>
 
-        <div>
-          <p className=" mt-5">Product </p>
+        <div className=" w-[12%]"></div>
+
+        <div className="w-[12%]">
+          <p className="">Product </p>
+
+          <p> 
+            
+             </p>
         </div>
 
-        <div>
-          <p className=" mt-5">Resources </p>
+        <div className="w-[12%]">
+          <p className="">Resources </p>
         </div>
 
-        <div>
-          <p className=" mt-5">More from wix </p>
+        <div className="w-[12%]">
+          <p className="">More from wix </p>
         </div>
 
-        <div>
-          <p className=" mt-5">Company </p>
+        <div className="w-[12%]">
+          <p className=" ">Company </p>
         </div>
       </div>
     </div>
