@@ -8,7 +8,7 @@ import JoinWix from "./_components/JoinWix";
 import MultipleBusiness from "./_components/MultipleBusiness";
 import WixApiHeader from "./_components/WixApiHeader";
 import WixApiSection from "./_components/WixApiSection";
-import { sliderDataMock } from "./fonts/mock-data";
+import { sliderDataMock } from "./helpers/mock-data";
 
 export default function Home() {
   return (

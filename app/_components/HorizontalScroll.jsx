@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import WixApiSection from "./WixApiSection";
-import { sliderDataMock } from "@/app/fonts/mock-data";
+import { sliderDataMock } from "@/app/helpers/mock-data";
 
 const HorizontalScroll = () => {
   const scrollRef = useRef(null);

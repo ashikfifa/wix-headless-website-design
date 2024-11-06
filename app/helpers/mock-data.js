@@ -1,5 +1,8 @@
 import slider1 from "@/app/assets/images/slider-1.jpg";
 import slider2 from "@/app/assets/images/slider2.webp";
+import slider3 from "@/app/assets/images/slider-3.webp";
+import slider4 from "@/app/assets/images/slider-4.webp";
+import slider5 from "@/app/assets/images/slider-5.webp";
 
 export const sliderDataMock = [
   {
@@ -18,19 +21,19 @@ export const sliderDataMock = [
     title: "Headless Bookings",
     descriptions:
       "Integrate flexible booking features based on location and availability, schedule or manage appointments, sync staff calendars, set up automated reminders and more.",
-    imageSlider: slider1,
+    imageSlider: slider3,
   },
   {
     title: "Headless Bookings 2",
     descriptions:
       "Integrate flexible booking features based on location and availability, schedule or manage appointments, sync staff calendars, set up automated reminders and more.",
-    imageSlider: slider2,
+    imageSlider: slider4,
   },
   {
     title: "Headless Bookings 2",
     descriptions:
       "Integrate flexible booking features based on location and availability, schedule or manage appointments, sync staff calendars, set up automated reminders and more.",
-    imageSlider: slider2,
+    imageSlider: slider5,
   },
 ];
 

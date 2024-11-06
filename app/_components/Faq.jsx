@@ -1,5 +1,5 @@
 import React from 'react'
-import { faqs } from '../fonts/mock-data'
+import { faqs } from '../helpers/mock-data'
 import Accordion from './Accordion'
 
 const Faq=()=> {
