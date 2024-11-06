@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 import MegaMenu from "./MegaMenu";
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const megaMenuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,19 +17,30 @@ const Navbar = () => {
 
   const handleMouseEnter = (item) => {
     setHoveredItem(item);
-    setShowMegaMenu(true)
+    setShowMegaMenu(true);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredItem(null);
-    setShowMegaMenu(false)
+  const handleClickOutside = (event) => {
+    if (megaMenuRef.current && !megaMenuRef.current.contains(event.target)) {
+      setShowMegaMenu(false);
+      setHoveredItem(null);
+    }
   };
 
-
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-white py-4 shadow-md">
-      {showMegaMenu && <MegaMenu />}
+      {showMegaMenu && (
+        <div ref={megaMenuRef}>
+          <MegaMenu />
+        </div>
+      )}
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Left: Logo */}
         <div className="text-black text-xl font-bold">
@@ -40,21 +52,23 @@ const Navbar = () => {
           <Link href="/">
             <span
               className="text-black flex items-center gap-1 hover:text-gray-700"
-              onMouseEnter={() => handleMouseEnter('product')}
-          onMouseLeave={handleMouseLeave}
+              onClick={() => handleMouseEnter("product")}
             >
-              Product{hoveredItem === 'product' ? <FaAngleUp /> : <FaAngleDown />}
+              Product
+              {hoveredItem === "product" ? <FaAngleUp /> : <FaAngleDown />}
             </span>
           </Link>
           <div
             className="relative"
-           onMouseEnter={() => handleMouseEnter('resources')}
-        onMouseLeave={handleMouseLeave}
+            onClick={() => handleMouseEnter("resources")}
           >
-            <button className="text-black flex items-center gap-1 hover:text-gray-700">Resources{hoveredItem === 'resources' ? <FaAngleUp /> : <FaAngleDown />}</button>
+            <button className="text-black flex items-center gap-1 hover:text-gray-700">
+              Resources
+              {hoveredItem === "resources" ? <FaAngleUp /> : <FaAngleDown />}
+            </button>
           </div>
           <Link href="/enterprise">
-            <span className="text-black hover:text-gray-700">Enterprise </span>
+            <span className="text-black hover:text-gray-700">Enterprise</span>
           </Link>
           <Link href="/pricing">
             <span className="text-black hover:text-gray-700">Pricing</span>
