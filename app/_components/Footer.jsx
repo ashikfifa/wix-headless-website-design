@@ -103,7 +103,7 @@ const Footer = () => {
       <div className=" mt-5">
         <div className=" border-b-[1px]"></div>
 
-        <div className=" mt-5 flex flex-wrap items-center justify-between text-white mb-10">
+        <div className=" mt-5 flex flex-wrap items-center justify-between text-white">
           <div className=" flex flex-wrap gap-8 items-center">
             <span className="text-sm md:text-base lg:text-base border-b-[1px] border-white sm:w-auto ">
               {" "}
