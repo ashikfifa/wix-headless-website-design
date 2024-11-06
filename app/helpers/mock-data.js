@@ -86,21 +86,6 @@ export const productData = [
     name: "Management Tools",
   },
   {
-    name: "SEO",
-  },
-  {
-    name: "Marketing Integrations",
-  },
-  {
-    name: "SEO",
-  },
-  {
-    name: "eCommerce",
-  },
-  {
-    name: "SEO",
-  },
-  {
     name: "Security",
   },
 ];
