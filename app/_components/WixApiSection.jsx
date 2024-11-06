@@ -10,15 +10,17 @@ const WixApiSection = (props) => {
         <p className=" font-medium text-3xl"> {item?.title} </p>
 
         <p className=" mt-5">{item?.descriptions}</p>
-        <button>Starter Template</button>
-        <span className=" flex items-center gap-3 text-lg border-b-2 border-white w-[60%] sm:w-auto sm:text-xl">
+
+        <button className="px-6 py-3 rounded-3xl mt-7 bg-black text-white">Starter Template</button>
+
+        <span className=" flex items-center gap-3 text-sm border-b-2 mt-4 border-white w-[60%] sm:w-auto md:text-base">
           Read documentation <FaArrowRightLong />
         </span>
       </div>
 
       <div className=" w-[50%]">
         <Image
-          className="rounded-tr-2xl rounded-br-2xl"
+          className="rounded-tr-2xl rounded-br-2xl h-full"
           src={item?.imageSlider}
           alt="slider1"
         />
