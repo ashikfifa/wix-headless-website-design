@@ -27,7 +27,7 @@ body {
 }
 
 .wixApiHeight {
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 30vh);
 }
 
 .scrollbar-hide::-webkit-scrollbar {
