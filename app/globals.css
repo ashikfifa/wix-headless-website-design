@@ -4,14 +4,7 @@
 
 
 body {
-  color: var(--foreground);
   font-family: var(--font-roboto);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
 
 .wixApiHeight {
